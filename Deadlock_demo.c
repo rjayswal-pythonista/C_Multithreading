@@ -53,3 +53,19 @@ int main(int argc, char *argv[]) {
     pthread_mutex_destroy(&mutexWater);
     return 0;
 }
+
+/* Output: 
+    
+    Either Deadlock or 
+
+    Incremented fuel to: 100 set water to 100
+    Incremented fuel to: 150 set water to 150
+    Incremented fuel to: 200 set water to 200
+    Incremented fuel to: 250 set water to 250
+    Incremented fuel to: 300 set water to 300
+    Incremented fuel to: 350 set water to 350
+    Incremented fuel to: 400 set water to 400
+    Incremented fuel to: 450 set water to 450
+    Fuel: 450
+    Water: 450
+*/
